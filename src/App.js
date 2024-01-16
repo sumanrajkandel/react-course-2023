@@ -3,9 +3,11 @@
 
 import ButtonComponent from "./Components/ButtonComponent";
 import ChildComponent from "./Components/ChildComponent";
+import Forms from "./Components/Forms";
 import Users from "./Components/ListConcepts/Users";
 import Teachers from "./Components/PropsConcept/Teachers";
 import SubComponent from "./Components/SubComponent";
+import UseEffectExample from "./UseEffectConcept";
 
 // import { createElement } from "react"
 
@@ -65,10 +67,11 @@ function App() {
 
       {/* <Teachers></Teachers> */}
 
-      <Users></Users>
+      {/* <Users></Users> */}
 
+      {/* <Forms></Forms> */}
 
-
+      <UseEffectExample></UseEffectExample>
 
     </div>
 
