@@ -3,6 +3,8 @@
 
 import ButtonComponent from "./Components/ButtonComponent";
 import ChildComponent from "./Components/ChildComponent";
+import Form from "./Components/Context/Form";
+import Navbar from "./Components/Context/Navbar";
 import Forms from "./Components/Forms";
 import Users from "./Components/ListConcepts/Users";
 import Teachers from "./Components/PropsConcept/Teachers";
@@ -71,7 +73,10 @@ function App() {
 
       {/* <Forms></Forms> */}
 
-      <UseEffectExample></UseEffectExample>
+      {/* <UseEffectExample></UseEffectExample> */}
+
+      <Navbar></Navbar>
+      <Form></Form>
 
     </div>
 
