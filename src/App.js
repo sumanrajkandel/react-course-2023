@@ -1,6 +1,7 @@
 
 // import { Component } from 'react';
 
+import APICallExample from "./Components/APICall";
 import ButtonComponent from "./Components/ButtonComponent";
 import ChildComponent from "./Components/ChildComponent";
 import Form from "./Components/Context/Form";
@@ -62,7 +63,7 @@ function CommonComponont() {
 function App() {
   return (
     <div>
-      <h1>Hello from h1</h1>
+      <h1>Hello from App.JS</h1>
       {/* <CommonComponont /> */}
       {/* <SubComponent />
       <ChildComponent /> */}
@@ -75,8 +76,10 @@ function App() {
 
       {/* <UseEffectExample></UseEffectExample> */}
 
-      <Navbar></Navbar>
-      <Form></Form>
+      {/* <Navbar></Navbar>
+      <Form></Form> */}
+
+      <APICallExample></APICallExample>
 
     </div>
 
