@@ -2,21 +2,33 @@ import { useEffect, useState } from "react";
 
 function APICallExample() {
     const [usersListData, setUsersListData] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
         async function getUserList() {
+            setIsLoading(true);
             const apiResponse = await fetch("https://dummyjson.com/users");
             const result = await apiResponse.json();
 
-            if (result.users.length > 0) console.log(result.users);
+            //if (result.users.length > 0) console.log(result.users);
 
             if (result && result.users && result.users.length > 0) {
-                setUsersListData(result.users);
+
+                setTimeout(() => {
+                    setUsersListData(result.users);
+                    setIsLoading(false);
+                }, 2000)
             }
         }
 
         getUserList();
+
     }, []);
+
+
+    if (isLoading)
+        return <p>loading...</p>
+        
 
     return (
         <>
