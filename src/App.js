@@ -10,6 +10,7 @@ import Forms from "./Components/Forms";
 import Users from "./Components/ListConcepts/Users";
 import Teachers from "./Components/PropsConcept/Teachers";
 import SubComponent from "./Components/SubComponent";
+import UseReducerExample from "./Components/UseReducerExample";
 import UseEffectExample from "./UseEffectConcept";
 
 // import { createElement } from "react"
@@ -79,7 +80,9 @@ function App() {
       {/* <Navbar></Navbar>
       <Form></Form> */}
 
-      <APICallExample></APICallExample>
+      {/* <APICallExample></APICallExample> */}
+
+      <UseReducerExample></UseReducerExample>
 
     </div>
 
